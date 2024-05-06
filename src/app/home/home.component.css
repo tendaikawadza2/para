@@ -1,0 +1,470 @@
+.main-container {
+  /* height: 100vh; */
+}
+.nav {
+  background-color: black;
+
+  color: white;
+  height: 70px;
+  display: flex; /* Make .nav a flex container */
+  justify-content: space-between; /* Distribute elements with space */
+  align-items: center; /* Align items to the center vertically */
+  margin-bottom: 0; /* Ensure no margin below the nav */
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+
+.about-btn {
+  border-radius: 20px;
+  background-color: rgb(204, 196, 79);
+  color: white;
+  font-size: 20px;
+  width: 160px;
+  height: 53px;
+  border: none;
+  padding-bottom: 5px;
+}
+
+button :hover {
+  cursor: pointer;
+}
+
+.nav ul {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Make the list items inline within the flexbox */
+}
+
+.nav li {
+  text-align: left;
+  text-decoration: none;
+  margin-right: 10px; /* Adjust as needed */
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  
+  background-color: rgb(23, 152, 175);
+  border-radius: 5px;
+  padding: 20px;
+  border: 2px solid;
+}
+
+a:active {
+  color: blue;
+}
+
+.search {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px; /* Adjust as needed */
+  margin-top: 20px;
+}
+
+.search input {
+  padding: 5px 22px 5px 2px; /* Adjust padding to accommodate the icon */
+  border: none;
+  border-radius: 5px;
+}
+
+.nav-pic {
+  justify-content: flex-start; /* Align the logo to the left */
+  position: absolute;
+  padding-left: 10px; /* Add some padding for spacing */
+}
+
+.fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.top {
+  background-color: rgb(221, 209, 209);
+  height: 550px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 0px;
+}
+.content {
+  height: 500px;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+footer{
+  background-color: #111;
+}
+.footerContainer{
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}
+
+
+horizontal-line {
+  border-top: 5px solid #cfc2c2; /* Set line style, thickness, and color */
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.content background-image {
+  size: 100% 100%;
+}
+.container {
+  display: flex; /* Ensures flexbox layout for columns */
+  flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+  margin: 0 auto;
+  width: 80%; /* Adjust width as needed */
+}
+
+/* Style each column */
+.column {
+  flex: 1 0 33.33%; /* Sets width to 1/3rd */
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  text-align: center; /* Optional: Center content horizontally */
+  transition: background-color 0.3s ease; /* Smooth background color change */
+  cursor: pointer; /* Indicate hover interaction */
+}
+
+/* Change background color on hover */
+.column:hover {
+  background-color: rgb(146, 91, 7); /* Light yellow hover color */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .column {
+    flex: 1 0 50%; /* Adjust width to 1/2 on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .column {
+    flex: 1 0 100%; /* Stack columns on extra small screens */
+  }
+}
+
+/* Column image (`.column img`):*/
+.column img {
+  height: 300px;
+  width: 280px;
+}
+.responsive-section {
+  background-color: #f0f0f0; /* Optional background color */
+  height: 400px;
+}
+
+/* Media queries for responsive adjustments (optional) */
+@media (max-width: 768px) {
+  .responsive-section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-section {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Prevent overlapping with other sections */
+body {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.main-container {
+  width: 100%; /* Adjust width as needed */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0px; /* Add some padding for better look */
+}
+.last {
+  display: flex; /* Makes the columns sit side-by-side */
+  flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+}
+
+.column {
+  flex: 1; /* Makes columns share the available space equally */
+  padding: 1rem; /* Adds some space around the content */
+  text-align: center; /* Centers the content within the column */
+  padding: 20px;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%; /* Makes columns stack on top of each other on small screens */
+  }
+}
+.last-container {
+  display: flex; /* Ensures flexbox layout for columns */
+  flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+  margin: 0 auto;
+  width: 95%; /* Adjust width as needed */
+}
+.image-container {
+  position: relative; /* Makes the container the reference point */
+}
+
+.image-base {
+  width: 75%; /* Fills the container width */
+  height: auto; /* Maintains aspect ratio */
+  padding-left: 100px;
+  padding-top: 120px;
+}
+
+.image-overlay {
+  position: absolute; /* Overlaps the base image */
+  top: 0; /* Positions at the top */
+  left: 0; /* Positions at the left */
+  width: 60%; /* Adjust for desired overlap size */
+  height: 60%; /* Maintains aspect ratio */
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+
+.marquee-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-item {
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+ .wrapper>* {
+     flex: 0 0 auto;
+ }
+
+ a {
+     text-decoration: none;
+     background-color: transparent;
+ }
+
+ .py-8 {
+     padding-top: 3.5rem !important;
+     padding-bottom: 3.5rem !important;
+ }
+
+ .footer-link-01 li+li {
+     padding-top: 0.8rem;
+ }
+
+ .footer-title-01 {
+     font-size: 16px;
+     margin: 0 0 20px;
+     font-weight: 600;
+ }
+
+ .footer-title-01 {
+     font-size: 16px;
+     margin: 0 0 20px;
+     font-weight: 600
+ }
+
+ .footer-link-01 li+li {
+     padding-top: .8rem
+ }
+
+ @media (max-width: 991.98px) {
+     .footer-link-01 li+li {
+         padding-top: .6rem
+     }
+ }
+
+ .footer-link-01 a {
+     position: relative;
+     display: inline-block;
+     vertical-align: top
+ }
+
+ .footer-link-01 a:after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: auto;
+     right: 0;
+     width: 0;
+     height: 1px;
+     transition: ease all .35s;
+     background: currentColor
+ }
+
+ .footer-link-01 a:hover:after {
+     left: 0;
+     right: auto;
+     width: 100%
+ }
+
+
+
+
+
+/* Carousel */
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+  /* Control buttons  */
+  /* Previous button  */
+  /* Next button  */
+  /* Changes the position of the indicators */
+  /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+  background: none;
+  color: #CACACA;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+#quote-carousel .carousel-control.left {
+  left: -60px;
+}
+#quote-carousel .carousel-control.right {
+  right: -60px;
+}
+#quote-carousel .carousel-indicators {
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  cursor: pointer;
+  border: 4px solid #CCC;
+  border-radius: 50px;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+  background: #333333;
+  width: 128px;
+  height: 128px;
+  border-radius: 100px;
+  border-color: #f33;
+  opacity: 1;
+  overflow: hidden;
+}
+.carousel-inner {
+  min-height: 300px;
+}
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: 'Fontawesome';
+  float: left;
+  margin-right: 10px;
+}	
+ 
